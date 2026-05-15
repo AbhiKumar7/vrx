@@ -1,0 +1,17 @@
+{
+  "name": "both",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "back": "nodemon backend/src/index.js",
+    "front": "cd frontend/vrx && npm run dev",
+    "dev": "concurrently \"npm run back\" \"npm run front\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
