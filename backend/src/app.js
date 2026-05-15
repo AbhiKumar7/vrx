@@ -13,7 +13,7 @@ app.use(express.json())
 
 app.use(
   cors({
-    origin: "https://vrx-green.vercel.app",
+    origin: "https://vrx-theta.vercel.app",
     credentials: true
   })
 );
