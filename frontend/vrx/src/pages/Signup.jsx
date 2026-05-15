@@ -64,11 +64,13 @@ const Signup = () => {
               </button>
             </div>
           </div>
-          {error && (
-            <div className="alert alert-error ">
-              <span>{error.response}</span>
-            </div>
-          )}
+         {error && (
+  <div className="alert alert-error">
+    <span>
+      {error?.response?.data?.message || error.message}
+    </span>
+  </div>
+)}
           {/* Button */}
           <button
             type="submit"
