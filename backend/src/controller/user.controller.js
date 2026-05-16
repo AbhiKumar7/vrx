@@ -66,7 +66,6 @@ export const registerUser = async (req, res) => {
       accessToken,
     });
   } catch (error) {
-     console.log(error);
     return res.status(500).json({
       status: false,
       message: "Server error",
@@ -145,6 +144,8 @@ export const loginUser = async (req, res) => {
       accessToken,
     });
   } catch (error) {
+     console.log(error);
+
     return res.status(500).json({
       status: false,
       message: "Server error",
